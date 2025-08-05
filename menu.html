@@ -136,6 +136,48 @@
   </div>
 </div>
 
+<style>
+  .slider-container {
+  position: relative; /* This is key */
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-wrapper img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FF4D00;
+  border: none;
+  z-index: 5;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+</style>
+
   
   
   
